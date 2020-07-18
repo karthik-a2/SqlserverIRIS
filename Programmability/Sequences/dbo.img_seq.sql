@@ -1,0 +1,6 @@
+﻿CREATE SEQUENCE [dbo].[img_seq]
+  AS bigint
+  START WITH 1000
+  NO CYCLE
+  CACHE 
+GO

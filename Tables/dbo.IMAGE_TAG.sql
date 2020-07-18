@@ -1,0 +1,14 @@
+﻿CREATE TABLE [dbo].[IMAGE_TAG] (
+  [TAGID] [numeric] NOT NULL,
+  [IMAGEID] [numeric] NULL,
+  [TAG_DESC] [varchar](100) NULL,
+  [created_dt] [date] NULL,
+  [created_by] [varchar](50) NULL,
+  CONSTRAINT [PK_IMAGE_TAG] PRIMARY KEY CLUSTERED ([TAGID])
+)
+ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[IMAGE_TAG]
+  ADD CONSTRAINT [FK_IMAGEID_TAG] FOREIGN KEY ([IMAGEID]) REFERENCES [dbo].[IMAGE_TBL] ([IMAGEID])
+GO
