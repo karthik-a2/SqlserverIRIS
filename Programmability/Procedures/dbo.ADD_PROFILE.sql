@@ -10,7 +10,7 @@ CREATE procedure [dbo].[ADD_PROFILE]
  )
 as 
 BEGIN
-
+declare @v_count1 numeric;
 declare @v_count numeric;
 declare @v_profileid numeric;
    BEGIN TRY
