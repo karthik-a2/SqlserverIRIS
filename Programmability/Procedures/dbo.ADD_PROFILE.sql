@@ -21,6 +21,7 @@ declare @v_profileid numeric;
 	RETURN
 	END
 
+	PRINT 'alert'
 	
 	select @v_count = count(1) from PROFILE_MSTR
 	where profile_Name = @p_profilename;
